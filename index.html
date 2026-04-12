@@ -40,7 +40,7 @@
     .hamburger span { display:block;width:26px;height:2px;background:var(--white);transition:transform .3s,opacity .3s; }
     .hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
     .hamburger.open span:nth-child(2) { opacity:0; }
-    .hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+    .hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }  
 
     /* mobile drawer */
     .mobile-menu { display:none;position:fixed;inset:0;top:64px;z-index:490;background:rgba(8,10,12,.97);backdrop-filter:blur(16px);flex-direction:column;align-items:center;justify-content:center;gap:2.5rem; }
@@ -53,7 +53,7 @@
     .hero-bg { position:absolute;inset:0;background:radial-gradient(ellipse 60% 70% at 70% 50%,rgba(200,153,42,.06) 0%,transparent 70%),linear-gradient(160deg,#080A0C 50%,#0F1318 100%); }
     .hero-grid { position:absolute;inset:0;opacity:.07;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:60px 60px; }
     .hero-diag { position:absolute;bottom:-2px;left:0;right:0;height:120px;background:var(--dark);clip-path:polygon(0 100%,100% 0,100% 100%); }
-    .hero-badge { display:inline-flex;align-items:center;gap:.6rem;font-family:'Barlow Condensed',sans-serif;font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.8rem;position:relative;z-index:2;opacity:0;animation:fadeUp .8s .2s forwards; }
+    .hero-badge { display:inline-flex;align-items:center;gap:.6rem;font-family:'Barlow Condensed',sans-serif;font-size:1rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:1.8rem;position:relative;z-index:2;opacity:0;animation:fadeUp .8s .2s forwards; }
     .hero-badge::before { content:'';display:block;width:32px;height:1px;background:var(--gold); }
     .hero-heading { font-family:'Bebas Neue',sans-serif;font-size:clamp(4.5rem,11vw,10rem);line-height:.92;letter-spacing:.02em;position:relative;z-index:2;opacity:0;animation:fadeUp .9s .35s forwards; }
     .hero-heading .accent { color:var(--gold); }
@@ -67,12 +67,12 @@
     .hero-shield { position:absolute;right:6%;top:50%;transform:translateY(-50%);width:clamp(260px,32vw,480px);opacity:0;animation:shieldReveal 1.2s .4s forwards;z-index:2; }
     .hero-stats { display:flex;gap:4rem;margin-top:5rem;position:relative;z-index:2;border-top:1px solid var(--border);padding-top:2rem;opacity:0;animation:fadeUp .9s .8s forwards; }
     .stat-num { font-family:'Bebas Neue',sans-serif;font-size:2.8rem;color:var(--gold);line-height:1; }
-    .stat-label { font-family:'Barlow Condensed',sans-serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:.3rem; }
+    .stat-label { font-family:'Barlow Condensed',sans-serif;font-size:1rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:.3rem; }
 
     /* TICKER */
     .ticker { background:var(--gold);color:var(--black);overflow:hidden;padding:.7rem 0;position:relative;z-index:20; }
     .ticker-track { display:flex;white-space:nowrap;animation:ticker 28s linear infinite; }
-    .ticker-item { font-family:'Barlow Condensed',sans-serif;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;padding:0 2.5rem;display:flex;align-items:center;gap:1.2rem; }
+    .ticker-item { font-family:'Barlow Condensed',sans-serif;font-size:.95rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;padding:0 2.5rem;display:flex;align-items:center;gap:1.2rem; }1
     .ticker-item::after { content:'◆';font-size:.5rem; }
 
     /* shared */
@@ -195,6 +195,7 @@
       .team-grid{grid-template-columns:1fr;}
     }
   </style>
+  <link rel="icon" type="image/x-icon" href="/_C__Users_shada_Downloads_sentinel-brand-kit.html (1).png">
 </head>
 <body>
 
@@ -249,7 +250,7 @@
     <button class="btn-outline"  onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Our Services</button>
   </div>
   <div class="hero-stats">
-    <div><div class="stat-num">1200+</div><div class="stat-label">Missions Completed</div></div>
+    <div><div class="stat-num">1200+</div><div class="stat-label">Events Covered</div></div>
     <div><div class="stat-num">15+</div><div class="stat-label">Years of Operation</div></div>
     <div><div class="stat-num">98%</div><div class="stat-label">Client Retention</div></div>
     <div><div class="stat-num">350+</div><div class="stat-label">Trained Personnel</div></div>
@@ -410,7 +411,7 @@
       <p style="color:var(--muted);line-height:1.8;margin-bottom:2.5rem;">Speak with our security consultants today. We'll assess your threat environment and propose a protection plan within 24 hours.</p>
       <div class="contact-detail">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.52a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-        <a href="tel:+919876543210">+91 98765 43210</a>
+        <a href="tel:+919876543210">+91 87007 86557</a>
       </div>
       <div class="contact-detail">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -418,7 +419,7 @@
       </div>
       <div class="contact-detail">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <span>Sector 63, Noida — NCR &amp; Pan-India Operations</span>
+        <span>Sector 121, Noida &amp; Pan-India Operations</span>
       </div>
       <div style="margin-top:2.5rem;padding:1rem 1.2rem;background:var(--mid);border:1px solid var(--border);display:flex;align-items:center;gap:.8rem;">
         <svg style="width:18px;height:18px;color:var(--gold);min-width:18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
@@ -484,7 +485,7 @@
       <div class="footer-col"><h4>Legal</h4><ul><li><a href="#contact">Privacy Policy</a></li><li><a href="#contact">Terms of Service</a></li><li><a href="#contact">Licensing Info</a></li><li><a href="#contact">Contact Us</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2024 Sentinel Securities Pvt. Ltd. All rights reserved.</span>
+      <span>&copy; 2026 Sentinel Securities Pvt. Ltd. All rights reserved.</span>
       <span>Licensed &nbsp;|&nbsp; Insured &nbsp;|&nbsp; Verified</span>
     </div>
   </div>
@@ -519,7 +520,7 @@
 
   /* email via JS — prevents proxy/scraper obfuscation */
   (function(){
-    const u='ops',d='sentinelsec.in',el=document.getElementById('emailDisplay');
+    const u='helpdesk',d='sentinels.co.in',el=document.getElementById('emailDisplay');
     const a=document.createElement('a');
     a.href='mailto:'+u+'@'+d; a.textContent=u+'@'+d;
     a.style.cssText='color:var(--white);text-decoration:none;';
